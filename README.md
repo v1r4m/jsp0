@@ -1,1 +1,3 @@
 # jsp0
+* wow, jsp is fun...
+* toy project from https://wikidocs.net/book/5792
