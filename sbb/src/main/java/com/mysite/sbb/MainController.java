@@ -1,10 +1,11 @@
-package com.example.demo;
+package com.mysite.sbb;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class BookController {
+public class MainController {
 
     @RequestMapping("/sbb")
     @ResponseBody

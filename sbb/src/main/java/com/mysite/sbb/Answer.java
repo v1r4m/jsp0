@@ -1,16 +1,17 @@
-package com.example.demo;
-
-import lombok.Getter;
-import lombok.Setter;
+package com.mysite.sbb;
 
 import java.time.LocalDateTime;
 
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Column;
+import javax.persistence.Id;
+
 import javax.persistence.ManyToOne;
+import lombok.Getter;
+import lombok.Setter;
 
 @Getter
 @Setter

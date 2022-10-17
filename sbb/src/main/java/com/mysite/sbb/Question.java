@@ -1,18 +1,19 @@
-package com.example.demo;
+package com.mysite.sbb;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
-import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Column;
-import javax.persistence.OneToMany;
+import javax.persistence.Id;
 
 import lombok.Getter;
 import lombok.Setter;
+import java.util.List;
+import javax.persistence.CascadeType;
+import javax.persistence.OneToMany;
+
 
 @Getter
 @Setter
@@ -30,7 +31,6 @@ public class Question {
 
     private LocalDateTime createDate;
 
-    @OneToMany(mappedBy="question", cascade=CascadeType.REMOVE)
+    @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE)
     private List<Answer> answerList;
-    
 }
